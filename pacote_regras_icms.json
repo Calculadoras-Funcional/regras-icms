@@ -1,0 +1,253 @@
+{
+ "tipo": "pacote-regras-icms",
+ "versao_formato": 1,
+ "versao": "2026.11.10-1823",
+ "gerado": "2026-11-10T21:23:57.242Z",
+ "gerado_por": "Base de Regras de ICMS",
+ "ultima_verificacao": "2026-11-09",
+ "ufs": [
+  "SP"
+ ],
+ "regras": [
+  {
+   "id": "SP-ESTORNO-ISENTAS",
+   "uf": "SP",
+   "tema": "estorno_isentas",
+   "titulo": "Estorno do crédito por saída ou prestação isenta ou não tributada",
+   "resumo": "O crédito da mercadoria entrada ou do serviço tomado deve ser estornado quando a saída ou a prestação seguinte for isenta ou não tributada. O inciso II do art. 67 se refere à circunstância imprevisível na data da entrada. Na apuração, o estorno vai para o E111 com o código SP010302 (campo 05 do E110).",
+   "efeito": {
+    "codigo_e111": "SP010302"
+   },
+   "fundamento": "RICMS/SP, art. 67, II; LC 87/96, art. 21, I; Tabela 5.1.1 de SP (Portaria SRE 39/2023): SP010302",
+   "url": "https://legislacao.fazenda.sp.gov.br/Paginas/art067.aspx",
+   "vigencia": {
+    "ini": "2015-01",
+    "fim": null
+   },
+   "pagina_atualizada": "04/06/2025",
+   "verificado": "2026-11-09",
+   "status": "aprovada",
+   "historico": [
+    {
+     "data": "2026-11-09",
+     "mudanca": "Carga inicial",
+     "por": "Claude (conferido no site da Sefaz-SP)"
+    },
+    {
+     "data": "2026-11-09",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-09"
+  },
+  {
+   "id": "SP-ESTORNO-REDUCAO",
+   "uf": "SP",
+   "tema": "estorno_reducao_base",
+   "titulo": "Estorno proporcional por saída ou prestação com redução de base de cálculo",
+   "resumo": "Quando a saída ou a prestação tiver base de cálculo reduzida, o crédito é estornado na proporção da redução (art. 67, VI). A Tabela 5.1.1 de SP tem o código SP010304 só para industrialização ou produção rural; nos demais casos, o código é SP010399 (outras hipóteses).",
+   "efeito": {
+    "codigo_e111": "SP010399",
+    "proporcional": true
+   },
+   "fundamento": "RICMS/SP, art. 67, VI; LC 87/96, art. 20, § 3º; STF, Tema 299; Tabela 5.1.1 de SP: SP010399 (SP010304 para industrialização e produção rural)",
+   "url": "https://legislacao.fazenda.sp.gov.br/Paginas/art067.aspx",
+   "vigencia": {
+    "ini": "2015-01",
+    "fim": null
+   },
+   "pagina_atualizada": "04/06/2025",
+   "verificado": "2026-11-09",
+   "status": "aprovada",
+   "historico": [
+    {
+     "data": "2026-11-09",
+     "mudanca": "Carga inicial",
+     "por": "Claude (conferido no site da Sefaz-SP)"
+    },
+    {
+     "data": "2026-11-09",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-09"
+  },
+  {
+   "id": "SP-ESTORNO-PERDA",
+   "uf": "SP",
+   "tema": "estorno_perda",
+   "titulo": "Estorno do crédito por perecimento, deterioração, roubo, furto ou extravio",
+   "resumo": "A mercadoria perdida, roubada ou deteriorada exige o estorno do crédito da entrada (CFOP 5.927 na saída). Código SP010301 no E111.",
+   "efeito": {
+    "codigo_e111": "SP010301"
+   },
+   "fundamento": "RICMS/SP, art. 67, I; LC 87/96, art. 21, IV; Tabela 5.1.1 de SP: SP010301",
+   "url": "https://legislacao.fazenda.sp.gov.br/Paginas/art067.aspx",
+   "vigencia": {
+    "ini": "2015-01",
+    "fim": null
+   },
+   "pagina_atualizada": "04/06/2025",
+   "verificado": "2026-11-09",
+   "status": "aprovada",
+   "historico": [
+    {
+     "data": "2026-11-09",
+     "mudanca": "Carga inicial",
+     "por": "Claude (conferido no site da Sefaz-SP)"
+    },
+    {
+     "data": "2026-11-09",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-09"
+  },
+  {
+   "id": "SP-ESTORNO-TRANSPORTE-OUTRA-UF",
+   "uf": "SP",
+   "tema": "estorno_transporte_outra_uf",
+   "titulo": "Transporte iniciado em outra UF: crédito do combustível e dos insumos não fica em SP",
+   "resumo": "A transportadora não pode manter em SP o crédito do combustível (mesmo comprado em SP) usado em prestação iniciada em outra UF. Pela RC 32349/2025, o crédito pode ser tomado na compra e estornado pela parte não usada em prestações tributadas em SP (art. 67, II), e o Fisco admite rateio proporcional, com controles que comprovem o cálculo. Não vale para quem optou pelo crédito outorgado do art. 11 do Anexo III.",
+   "efeito": {
+    "codigo_e111": "SP010302",
+    "rateio_proporcional": true
+   },
+   "fundamento": "RICMS/SP, arts. 59, 61, 66, III, e 67, II; SEFAZ-SP, RC 27846/2023 (DOE 20/07/2023) e RC 32349/2025 (DOE 07/11/2025)",
+   "url": "https://legislacao.fazenda.sp.gov.br/Paginas/RC32349_2025.aspx",
+   "vigencia": {
+    "ini": null,
+    "fim": null
+   },
+   "pagina_atualizada": "07/11/2025",
+   "verificado": "2026-11-09",
+   "status": "aprovada",
+   "historico": [
+    {
+     "data": "2026-11-09",
+     "mudanca": "Carga inicial",
+     "por": "Claude (conferido no site da Sefaz-SP)"
+    },
+    {
+     "data": "2026-11-09",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-09"
+  },
+  {
+   "id": "SP-TRANSP-OUTORGADO",
+   "uf": "SP",
+   "tema": "credito_outorgado_transporte",
+   "titulo": "Crédito outorgado de 20% no transporte (opcional, veda os demais créditos)",
+   "resumo": "O prestador de transporte, exceto aéreo e dutoviário, pode creditar-se de 20% do imposto devido na prestação. A opção alcança todos os estabelecimentos do contribuinte e veda o aproveitamento de quaisquer outros créditos (§ 1º). Opção e renúncia por termo, com efeito a partir do mês seguinte (§ 2º). Vigência atual até 31/12/2026 (§ 4º, Decreto 70.292/2025). No E111, o código SP020709 valeu até 06/2023; depois, o ajuste vai para a Tabela 5.3 (C197/D197).",
+   "efeito": {
+    "percentual": 0.2,
+    "veda_outros_creditos": true,
+    "codigo_e111_ate_2023_06": "SP020709"
+   },
+   "fundamento": "RICMS/SP, Anexo III, art. 11 (redação do Decreto 70.292/2025); Conv. ICMS 106/96",
+   "url": "https://legislacao.fazenda.sp.gov.br/Paginas/an3art011.aspx",
+   "vigencia": {
+    "ini": null,
+    "fim": "2026-12"
+   },
+   "pagina_atualizada": "29/12/2025",
+   "verificado": "2026-11-09",
+   "status": "aprovada",
+   "historico": [
+    {
+     "data": "2026-11-09",
+     "mudanca": "Carga inicial",
+     "por": "Claude (conferido no site da Sefaz-SP)"
+    },
+    {
+     "data": "2026-11-09",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-09"
+  },
+  {
+   "id": "SP-CRED-ACUMULADO",
+   "uf": "SP",
+   "tema": "credito_acumulado",
+   "titulo": "Hipóteses e apuração do crédito acumulado",
+   "resumo": "Gera crédito acumulado: I - alíquotas diferentes na entrada e na saída; II - redução de base com manutenção integral do crédito; III - operações ou prestações sem pagamento do imposto (isenção, não incidência, ST com retenção antecipada, diferimento) com manutenção do crédito. Apuração por custeio (Portaria CAT 83/2009) ou simplificada (Portaria CAT 207/2009); apropriação e transferência pelo e-CredAc (art. 72; Portaria CAT 26/2010; Portaria SRE 65/2023).",
+   "efeito": {
+    "hipoteses": [
+     "aliquotas_diversificadas",
+     "reducao_com_manutencao",
+     "sem_pagamento_com_manutencao"
+    ]
+   },
+   "fundamento": "RICMS/SP, arts. 71 e 72; Portarias CAT 83/2009, CAT 207/2009, CAT 26/2010 e SRE 65/2023",
+   "url": "https://legislacao.fazenda.sp.gov.br/Paginas/art071.aspx",
+   "vigencia": {
+    "ini": "2010-01",
+    "fim": null
+   },
+   "pagina_atualizada": "04/06/2025",
+   "verificado": "2026-11-09",
+   "status": "aprovada",
+   "historico": [
+    {
+     "data": "2026-11-09",
+     "mudanca": "Carga inicial",
+     "por": "Claude (conferido no site da Sefaz-SP)"
+    },
+    {
+     "data": "2026-11-09",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-09"
+  },
+  {
+   "id": "SP-TABELA-511",
+   "uf": "SP",
+   "tema": "tabela_ajustes",
+   "titulo": "Códigos de estorno de créditos da Tabela 5.1.1 (E111)",
+   "resumo": "Códigos SP01 (estorno de créditos) em vigor, conforme a Portaria SRE 39/2023. O SP019999 só valeu até 03/2015.",
+   "efeito": {
+    "codigos": {
+     "SP010301": "Perecimento, deterioração, roubo, furto ou extravio",
+     "SP010302": "Bem ou serviço com saída ou prestação não tributada",
+     "SP010303": "Industrialização ou produção rural com saída não tributada ou isenta",
+     "SP010304": "Industrialização ou produção rural com base de cálculo reduzida",
+     "SP010307": "Ativo permanente: transferência de crédito remanescente",
+     "SP010309": "Uso ou consumo de mercadoria ou serviço destinado à comercialização ou industrialização",
+     "SP010399": "Outras hipóteses"
+    }
+   },
+   "fundamento": "Portaria SRE 39/2023 (DOE 30/05/2023), Tabela 5.1.1 de SP",
+   "url": "https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-39-de-2023.aspx",
+   "vigencia": {
+    "ini": "2015-01",
+    "fim": null
+   },
+   "pagina_atualizada": "30/05/2023",
+   "verificado": "2026-11-09",
+   "status": "aprovada",
+   "historico": [
+    {
+     "data": "2026-11-09",
+     "mudanca": "Carga inicial",
+     "por": "Claude (conferido no site da Sefaz-SP)"
+    },
+    {
+     "data": "2026-11-09",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-09"
+  }
+ ]
+}
