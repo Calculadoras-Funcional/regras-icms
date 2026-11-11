@@ -1,0 +1,28 @@
+name: Atualizar Tema 1373 STJ
+
+on:
+  schedule:
+    - cron: '0 12 * * *'   # todo dia às 12:00 UTC (9h de Brasília)
+  workflow_dispatch:        # permite rodar na mão pela aba Actions
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Ler a página do STJ
+        run: node scripts/atualizar_tema_1373.mjs tema_1373.json
+        continue-on-error: true
+      - name: Gravar se mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tema_1373.json
+          git diff --cached --quiet || git commit -m "Tema 1373: verificação $(date -u +%Y-%m-%d)"
+          git push
