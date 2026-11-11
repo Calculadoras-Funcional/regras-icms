@@ -1,8 +1,8 @@
 {
  "tipo": "pacote-regras-icms",
  "versao_formato": 1,
- "versao": "2026.11.10-1823",
- "gerado": "2026-11-10T21:23:57.242Z",
+ "versao": "2026.11.10-2353",
+ "gerado": "2026-11-11T02:53:09.846Z",
  "gerado_por": "Base de Regras de ICMS",
  "ultima_verificacao": "2026-11-09",
  "ufs": [
@@ -111,12 +111,12 @@
    "uf": "SP",
    "tema": "estorno_transporte_outra_uf",
    "titulo": "Transporte iniciado em outra UF: crédito do combustível e dos insumos não fica em SP",
-   "resumo": "A transportadora não pode manter em SP o crédito do combustível (mesmo comprado em SP) usado em prestação iniciada em outra UF. Pela RC 32349/2025, o crédito pode ser tomado na compra e estornado pela parte não usada em prestações tributadas em SP (art. 67, II), e o Fisco admite rateio proporcional, com controles que comprovem o cálculo. Não vale para quem optou pelo crédito outorgado do art. 11 do Anexo III.",
+   "resumo": "A transportadora não pode manter em SP o crédito do combustível (mesmo comprado em SP) usado em prestação iniciada em outra UF. Pela RC 32349/2025, o crédito pode ser tomado na compra e estornado pela parte não usada em prestações tributadas em SP (art. 67, II), e o Fisco admite rateio proporcional, com controles que comprovem o cálculo. Não vale para quem optou pelo crédito outorgado do art. 11 do Anexo III. No E111, usar o código SP010399 (outras hipóteses): o SP010302 descreve estorno por saída ou prestação não tributada, e a prestação iniciada em outra UF é tributada, só que pela UF de início. Separar os códigos também deixa o estorno do transporte identificável na apuração.",
    "efeito": {
-    "codigo_e111": "SP010302",
+    "codigo_e111": "SP010399",
     "rateio_proporcional": true
    },
-   "fundamento": "RICMS/SP, arts. 59, 61, 66, III, e 67, II; SEFAZ-SP, RC 27846/2023 (DOE 20/07/2023) e RC 32349/2025 (DOE 07/11/2025)",
+   "fundamento": "RICMS/SP, arts. 59, 61, 66, III, e 67, II; SEFAZ-SP, RC 27846/2023 (DOE 20/07/2023) e RC 32349/2025 (DOE 07/11/2025); Tabela 5.1.1 de SP (Portaria SRE 39/2023): SP010399 - outras hipóteses",
    "url": "https://legislacao.fazenda.sp.gov.br/Paginas/RC32349_2025.aspx",
    "vigencia": {
     "ini": null,
@@ -135,9 +135,19 @@
      "data": "2026-11-09",
      "mudanca": "Aprovada",
      "por": "Usuário"
+    },
+    {
+     "data": "2026-11-11",
+     "mudanca": "Código do E111 de SP010302 para SP010399 (sugestão do usuário)",
+     "por": "Claude, a pedido do usuário"
+    },
+    {
+     "data": "2026-11-10",
+     "mudanca": "Alteração aprovada: Trocar o código do E111 para SP010399 (outras hipóteses). O SP010302 é o estorno por saída ou prestação não tributada; a prestação iniciada em outra UF é tributada pela UF de início, então se encaixa melhor em \"outras hipóteses\". O valor estornado e o campo 05 do E110 não mudam.",
+     "por": "Usuário"
     }
    ],
-   "aprovado_em": "2026-11-09"
+   "aprovado_em": "2026-11-10"
   },
   {
    "id": "SP-TRANSP-OUTORGADO",
