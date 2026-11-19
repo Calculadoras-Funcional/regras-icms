@@ -1,11 +1,12 @@
 {
  "tipo": "pacote-regras-icms",
  "versao_formato": 1,
- "versao": "2026.11.10-2353",
- "gerado": "2026-11-11T02:53:09.846Z",
+ "versao": "2026.11.19-1055",
+ "gerado": "2026-11-19T13:55:30.217Z",
  "gerado_por": "Base de Regras de ICMS",
- "ultima_verificacao": "2026-11-09",
+ "ultima_verificacao": "2026-11-16",
  "ufs": [
+  "SC",
   "SP"
  ],
  "regras": [
@@ -25,7 +26,7 @@
     "fim": null
    },
    "pagina_atualizada": "04/06/2025",
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-16",
    "status": "aprovada",
    "historico": [
     {
@@ -58,7 +59,7 @@
     "fim": null
    },
    "pagina_atualizada": "04/06/2025",
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-16",
    "status": "aprovada",
    "historico": [
     {
@@ -90,7 +91,7 @@
     "fim": null
    },
    "pagina_atualizada": "04/06/2025",
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-16",
    "status": "aprovada",
    "historico": [
     {
@@ -123,7 +124,7 @@
     "fim": null
    },
    "pagina_atualizada": "07/11/2025",
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-16",
    "status": "aprovada",
    "historico": [
     {
@@ -167,7 +168,7 @@
     "fim": "2026-12"
    },
    "pagina_atualizada": "29/12/2025",
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-16",
    "status": "aprovada",
    "historico": [
     {
@@ -203,7 +204,7 @@
     "fim": null
    },
    "pagina_atualizada": "04/06/2025",
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-16",
    "status": "aprovada",
    "historico": [
     {
@@ -243,7 +244,7 @@
     "fim": null
    },
    "pagina_atualizada": "30/05/2023",
-   "verificado": "2026-11-09",
+   "verificado": "2026-11-16",
    "status": "aprovada",
    "historico": [
     {
@@ -258,6 +259,264 @@
     }
    ],
    "aprovado_em": "2026-11-09"
+  },
+  {
+   "id": "SC-ESTORNO-ISENTAS",
+   "uf": "SC",
+   "tema": "estorno_isentas",
+   "titulo": "Estorno do crédito quando a saída ou prestação seguinte é isenta ou não tributada",
+   "resumo": "O crédito tomado deve ser estornado quando a mercadoria ou o serviço vier a ter saída ou prestação isenta ou não tributada (inclusive consumo em industrialização com saída isenta). Saídas para exportação não geram estorno (§ 1º). No E111, código SC010001.",
+   "efeito": {
+    "codigo_e111": "SC010001"
+   },
+   "fundamento": "RICMS/SC-01, art. 36, I e II (vedação: art. 35, II); Tabela 5.1.1 - Tabela A de SC (Ato DIAT 73/2022): SC010001",
+   "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_00.htm",
+   "vigencia": {
+    "ini": "2009-01",
+    "fim": null
+   },
+   "pagina_atualizada": "01/09/2026 (RICMS); Tabela A: 14/10/2026",
+   "verificado": "2026-11-16",
+   "status": "aprovada",
+   "trecho_oficial": "Art. 36. O sujeito passivo deverá efetuar o estorno do imposto de que se tiver creditado, sempre que o serviço tomado ou a mercadoria entrada no estabelecimento: I - for objeto de saída ou prestação de serviço isenta ou não tributada, sendo esta circunstância imprevisível na data da entrada [...]",
+   "historico": [
+    {
+     "data": "2026-11-11",
+     "mudanca": "Carga inicial (SC)",
+     "por": "Claude (conferido no site oficial da Sefaz)"
+    },
+    {
+     "data": "2026-11-18",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-18"
+  },
+  {
+   "id": "SC-ESTORNO-REDUCAO",
+   "uf": "SC",
+   "tema": "estorno_reducao_base",
+   "titulo": "Estorno proporcional quando a saída ou prestação seguinte tem redução de base de cálculo",
+   "resumo": "Com redução de base de cálculo na operação seguinte, o crédito vale só na proporção tributada (art. 30). A parcela não tributada é estornada no E111 com o código SC010106 (desde 04/2023); o DESCR_COMPL_AJ recebe o cBenef (Tabela 5.2).",
+   "efeito": {
+    "codigo_e111": "SC010106",
+    "proporcional": true
+   },
+   "fundamento": "RICMS/SC-01, art. 30; Tabela 5.1.1 - Tabela A de SC: SC010106 (de 01/2023 a 03/2023 valiam códigos por dispositivo, SC010058 a SC010103)",
+   "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_00.htm",
+   "vigencia": {
+    "ini": "2023-04",
+    "fim": null
+   },
+   "pagina_atualizada": "01/09/2026 (RICMS); Tabela A: 14/10/2026",
+   "verificado": "2026-11-16",
+   "status": "aprovada",
+   "trecho_oficial": "Art. 30. O crédito será apropriado proporcionalmente nos casos em que a operação ou prestação subseqüente for beneficiada por redução da base de cálculo, na forma prevista na legislação tributária.",
+   "historico": [
+    {
+     "data": "2026-11-11",
+     "mudanca": "Carga inicial (SC)",
+     "por": "Claude (conferido no site oficial da Sefaz)"
+    },
+    {
+     "data": "2026-11-18",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-18"
+  },
+  {
+   "id": "SC-ESTORNO-PERDA",
+   "uf": "SC",
+   "tema": "estorno_perda",
+   "titulo": "Estorno do crédito por perecimento, deterioração ou extravio",
+   "resumo": "Mercadoria que perecer, se deteriorar ou se extraviar tem o crédito estornado. SC não tem código próprio: usa o SC010001, cuja descrição cita mercadorias extraviadas e furtadas.",
+   "efeito": {
+    "codigo_e111": "SC010001"
+   },
+   "fundamento": "RICMS/SC-01, art. 36, IV; Tabela 5.1.1 - Tabela A de SC: SC010001",
+   "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_00.htm",
+   "vigencia": {
+    "ini": "2009-01",
+    "fim": null
+   },
+   "pagina_atualizada": "01/09/2026 (RICMS); Tabela A: 14/10/2026",
+   "verificado": "2026-11-16",
+   "status": "aprovada",
+   "trecho_oficial": "Art. 36 [...] IV - vier a perecer, deteriorar-se ou extraviar-se. | SC010001 Estorno de crédito relativo à saída de mercadorias isentas ou não-tributadas, extraviadas, furtadas, etc.",
+   "historico": [
+    {
+     "data": "2026-11-11",
+     "mudanca": "Carga inicial (SC)",
+     "por": "Claude (conferido no site oficial da Sefaz)"
+    },
+    {
+     "data": "2026-11-18",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-18"
+  },
+  {
+   "id": "SC-ESTORNO-TRANSPORTE-OUTRA-UF",
+   "uf": "SC",
+   "tema": "estorno_transporte_outra_uf",
+   "titulo": "Transporte iniciado em outra UF: estorno proporcional ao faturamento",
+   "resumo": "SC veda o crédito de insumos usados em transporte iniciado em outro Estado (art. 34, V) e manda estornar os créditos na proporção do faturamento dessas prestações (art. 36, § 2º, II), inclusive combustível, lubrificante, pneus e peças (§ 3º). A Consulta COPAT 063/2012 confirma o crédito de combustível só na razão das prestações iniciadas em SC. Código E111: SC010002.",
+   "efeito": {
+    "codigo_e111": "SC010002",
+    "proporcional": true,
+    "codigo_outros_estornos": "SC019999"
+   },
+   "fundamento": "RICMS/SC-01, art. 34, V; art. 36, § 2º, II e § 3º; art. 29, § 8º; Consulta COPAT 063/2012; Tabela 5.1.1 - Tabela A de SC: SC010002",
+   "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_00.htm",
+   "vigencia": {
+    "ini": "2009-01",
+    "fim": null
+   },
+   "pagina_atualizada": "01/09/2026 (RICMS); Tabela A: 14/10/2026",
+   "verificado": "2026-11-16",
+   "status": "aprovada",
+   "trecho_oficial": "§ 2° Deverão ainda ser estornados, proporcionalmente ao respectivo faturamento [...] os créditos incorridos: [...] II - na prestação de serviço de transporte iniciado em outro Estado.",
+   "historico": [
+    {
+     "data": "2026-11-11",
+     "mudanca": "Carga inicial (SC)",
+     "por": "Claude (conferido no site oficial da Sefaz)"
+    },
+    {
+     "data": "2026-11-18",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-18"
+  },
+  {
+   "id": "SC-TRANSP-OUTORGADO",
+   "uf": "SC",
+   "tema": "credito_outorgado_transporte",
+   "titulo": "Crédito presumido de 20% no transporte (opcional, substitui os créditos efetivos)",
+   "resumo": "O prestador de transporte (exceto aéreo) pode optar por crédito presumido de 20% do ICMS devido, em substituição aos créditos efetivos. A opção vale para todos os estabelecimentos, dura no mínimo 12 meses e exige estornar o crédito do estoque ao entrar (SC010107); apuração em separado. Na EFD, o crédito vai no D197/C197 com o código SC10000070 (Tabela 5.3); o E111 SC020051 só quando não cabe em D100/C100. Sem data final.",
+   "efeito": {
+    "percentual": 0.2,
+    "veda_outros_creditos": true,
+    "opcional": true,
+    "permanencia_minima_meses": 12,
+    "codigo_c197_d197": "SC10000070",
+    "codigo_e111_excecao": "SC020051",
+    "codigo_e111_estorno_estoque_ingresso": "SC010107",
+    "codigo_e111_estorno_proporcional": "SC010105"
+   },
+   "fundamento": "RICMS/SC-01, Anexo 2, art. 25 (c/c art. 23, I, V e VII, e arts. 25-B e 25-C); Convênio ICMS 106/96; Tabela 5.3 - Tabela A de SC: SC10000070",
+   "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_02.htm",
+   "vigencia": {
+    "ini": "1997-01",
+    "fim": null
+   },
+   "pagina_atualizada": "27/10/2026 (Anexo 2); Tabela 5.3 A: 01/06/2026",
+   "verificado": "2026-11-16",
+   "status": "aprovada",
+   "trecho_oficial": "Art. 25. Os estabelecimentos prestadores de serviço de transporte, em substituição aos créditos efetivos do imposto, observado o disposto no art. 23, poderão optar por um crédito presumido de 20% (vinte por cento) do valor do ICMS devido na prestação (Convênio 106/96).",
+   "historico": [
+    {
+     "data": "2026-11-11",
+     "mudanca": "Carga inicial (SC)",
+     "por": "Claude (conferido no site oficial da Sefaz)"
+    },
+    {
+     "data": "2026-11-18",
+     "mudanca": "Aprovada",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-18"
+  },
+  {
+   "id": "SC-CRED-ACUMULADO",
+   "uf": "SC",
+   "tema": "credito_acumulado",
+   "titulo": "Crédito acumulado: hipóteses, reserva e transferência por AUC",
+   "resumo": "Acumula o saldo credor da manutenção autorizada de créditos em operações isentas, não tributadas ou de exportação. Usa-se primeiro para compensar débitos próprios; o restante pode ir a estabelecimento do mesmo titular ou, conforme o erário, a outros contribuintes. Caminho: quadro da DIME, pedido de reserva (E111 SC000003 no transmitente) e AUC (E111 SC020056 no destinatário).",
+   "efeito": {
+    "hipoteses": [
+     "exportação (art. 40, § 3º, I)",
+     "isentas ou não tributadas com manutenção autorizada (art. 40, caput e § 3º, II)",
+     "diferimento do Anexo 3 (art. 44, II)",
+     "crédito presumido de exportação do Anexo 2, art. 17, III (art. 40, §§ 14 e 15)",
+     "produtos agropecuários (art. 41)"
+    ],
+    "codigo_e111_debito_reserva": "SC000003",
+    "codigo_e111_credito_recebido_auc": "SC020056"
+   },
+   "fundamento": "RICMS/SC-01, arts. 40, 40-A a 40-C, 41, 44, 45, 46, 48, 50 e 52; Tabela 5.1.1 - Tabela A: SC000003 e SC020056",
+   "url": "https://legislacao.sef.sc.gov.br/html/regulamentos/icms/ricms_01_00.htm",
+   "vigencia": {
+    "ini": null,
+    "fim": null
+   },
+   "pagina_atualizada": "01/09/2026 (RICMS); Tabela A: 14/10/2026",
+   "verificado": "2026-11-16",
+   "status": "aprovada",
+   "trecho_oficial": "Art. 40. Consideram-se acumulados os saldos credores decorrentes de manutenção expressamente autorizada de créditos fiscais relativos a operações ou prestações subseqüentes isentas ou não tributadas.",
+   "historico": [
+    {
+     "data": "2026-11-11",
+     "mudanca": "Carga inicial (SC)",
+     "por": "Claude (conferido no site oficial da Sefaz)"
+    },
+    {
+     "data": "2026-11-18",
+     "mudanca": "Aprovada (lote SC)",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-18"
+  },
+  {
+   "id": "SC-TABELA-511",
+   "uf": "SC",
+   "tema": "tabela_ajustes",
+   "titulo": "Códigos de estorno de créditos da Tabela 5.1.1 de SC (E111)",
+   "resumo": "A SEF/SC institui as tabelas externas da EFD pelo Ato DIAT 73/2022 e as atualiza na página SPED Fiscal (Tabela A vigente de 14/10/2026). Listados os códigos SC01 em vigor.",
+   "efeito": {
+    "codigos": {
+     "SC010001": "Saída isenta/não tributada, extravio, furto, perecimento (art. 36)",
+     "SC010002": "Proporcional - serviços sujeitos ao ISS ou transporte iniciado em outra UF (art. 36, § 2º)",
+     "SC010005": "Parcela não tributada quando o crédito é proporcional às saídas tributadas",
+     "SC010008": "Parcela inaproveitável de créditos presumidos condicionados",
+     "SC010105": "Proporcional do crédito efetivo na opção por crédito presumido (An. 2, art. 23, VII)",
+     "SC010106": "Proporcional - saída/prestação com redução de base de cálculo (art. 30)",
+     "SC010107": "Crédito efetivo do estoque ao ingressar no crédito presumido (An. 2, art. 23, I)",
+     "SC019999": "Estorno de outros créditos (genérico)"
+    }
+   },
+   "fundamento": "Ato DIAT 73/2022 (redação do Ato DIAT 29/2024); Portaria SEF 377/2019; Tabela 5.1.1 - Tabela A (SEF/SC, 14/10/2026)",
+   "url": "https://www.sef.sc.gov.br/api-portal/Documento/ver/1182",
+   "vigencia": {
+    "ini": null,
+    "fim": null
+   },
+   "pagina_atualizada": "14/10/2026",
+   "verificado": "2026-11-16",
+   "status": "aprovada",
+   "trecho_oficial": "Art. 2º As tabelas de que trata o caput do art. 1º deste Ato serão disponibilizadas na página oficial da Secretaria de Estado da Fazenda, no endereço eletrônico https://www.sef.sc.gov.br/saiba-mais/sped-fiscal.",
+   "historico": [
+    {
+     "data": "2026-11-11",
+     "mudanca": "Carga inicial (SC)",
+     "por": "Claude (conferido no site oficial da Sefaz)"
+    },
+    {
+     "data": "2026-11-18",
+     "mudanca": "Aprovada (lote SC)",
+     "por": "Usuário"
+    }
+   ],
+   "aprovado_em": "2026-11-18"
   }
  ]
 }
